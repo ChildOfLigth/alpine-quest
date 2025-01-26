@@ -4,7 +4,6 @@
   --fsz-for-p-title: calc(18px + 2 * (100vw / 1912));
   --standart-fsz-p: calc(17px + 1 * (100vw / 1912));
   --first-main-color: #4caf50;
-  --second-main-color: #ff6900;
 }
 
 body {
@@ -17,6 +16,7 @@ body {
 body header {
   width: 100%;
   height: 7vh;
+  min-height: 52px;
   background-color: black;
   position: sticky;
 }
@@ -38,6 +38,8 @@ body header .header-content .header-content__web-name {
 }
 body header .header-content .header-content_chenge-theme-buttons {
   width: 7%;
+  min-width: 120px;
+  max-width: 120px;
   height: 100%;
   margin-left: auto;
   display: -webkit-box;
@@ -97,7 +99,7 @@ body main {
 }
 body main .main_welcome-section {
   width: 100%;
-  height: 80vh;
+  height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -703,4 +705,68 @@ body footer .footer_legal-content .legal-content_content .content_links a:hover 
 }
 body.dark-theme {
   background-color: rgb(20, 39, 39);
+}
+body.dark-theme main .main_welcome-section .welcome-section_text-part {
+  color: white;
+}
+body.dark-theme main .main_welcome-section .welcome-section_text-part h1 {
+  color: white;
+}
+body.dark-theme main .main_about-company {
+  color: white;
+}
+body.dark-theme main .main_about-company img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+body.dark-theme main .main_about-company .main_about-company_title h2 {
+  color: var(--first-main-color);
+}
+body.dark-theme main .main_about-company .main_about-company_title p {
+  color: white;
+}
+body.dark-theme main .main_about-company .main_about-company_our-advantages h3 {
+  color: var(--first-main-color);
+}
+body.dark-theme main .main_types-of-tours .types-of-tours_title h2 {
+  color: var(--first-main-color);
+}
+body.dark-theme main .main_tour-data .tour-data_text-part {
+  color: white;
+}
+body.dark-theme main .main_tour-data .tour-data_text-part .tour-data_title h2 {
+  color: var(--first-main-color);
+}
+body.dark-theme main .main_winter-tours .winter-tours_text-part {
+  color: white;
+}
+body.dark-theme main .main_winter-tours .winter-tours_text-part .text-part_title h2 {
+  color: var(--first-main-color);
+}
+body.dark-theme main .main_winter-tours .winter-tours_text-part .text-part_tour-opportunities li::before {
+  content: "";
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+body.dark-theme main .main_user-reviews .user-reviews_title h2 {
+  color: var(--first-main-color);
+}
+body.dark-theme main .main_user-reviews .user-reviews_title p {
+  color: white;
+}
+body.dark-theme main .main_user-reviews .user-reviews_reviews {
+  color: white;
+}
+body.dark-theme footer .footer_legal-content {
+  color: white;
+}
+body.dark-theme footer .footer_legal-content .content_social-media .icon {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+body.dark-theme footer .footer_legal-content .br {
+  background-color: white;
+}
+body.dark-theme footer .footer_legal-content .content_links a {
+  color: white;
 }

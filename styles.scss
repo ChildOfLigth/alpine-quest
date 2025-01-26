@@ -3,9 +3,7 @@
   --fsz-for-h2-title: calc(28px + 12 * (100vw / 1912));
   --fsz-for-p-title: calc(18px + 2 * (100vw / 1912));
   --standart-fsz-p: calc(17px + 1 * (100vw / 1912));
-  //standart color theme
   --first-main-color: #4caf50;
-  --second-main-color: #ff6900;
 }
 
 body {
@@ -17,6 +15,7 @@ body {
   header {
     width: 100%;
     height: 7vh;
+    min-height: 52px;
     background-color: black;
     position: sticky;
 
@@ -35,6 +34,8 @@ body {
 
       .header-content_chenge-theme-buttons {
         width: 7%;
+        min-width: 120px;
+        max-width: 120px;
         height: 100%;
         margin-left: auto;
         display: flex;
@@ -79,7 +80,7 @@ body {
 
     .main_welcome-section {
       width: 100%;
-      height: 80vh;
+      height: 95vh;
       display: flex;
       justify-content: space-between;
       .present-photo {
@@ -558,5 +559,101 @@ body {
 
   &.dark-theme {
     background-color: rgb(20, 39, 39);
+    main {
+      .main_welcome-section {
+        .welcome-section_text-part {
+          color: white;
+          h1 {
+            color: white;
+          }
+        }
+      }
+      .main_about-company {
+        color: white;
+        img {
+          filter: invert(1);
+        }
+        .main_about-company_title {
+          h2 {
+            color: var(--first-main-color);
+          }
+          p {
+            color: white;
+          }
+        }
+        .main_about-company_our-advantages {
+          h3 {
+            color: var(--first-main-color);
+          }
+        }
+      }
+      .main_types-of-tours {
+        .types-of-tours_title {
+          h2 {
+            color: var(--first-main-color);
+          }
+        }
+      }
+      .main_tour-data {
+        .tour-data_text-part {
+          color: white;
+          .tour-data_title {
+            h2 {
+              color: var(--first-main-color);
+            }
+          }
+        }
+      }
+      .main_winter-tours {
+        .winter-tours_text-part {
+          color: white;
+          .text-part_title {
+            h2 {
+              color: var(--first-main-color);
+            }
+          }
+
+          .text-part_tour-opportunities {
+            li {
+              &::before {
+                content: "";
+                filter: invert(1);
+              }
+            }
+          }
+        }
+      }
+      .main_user-reviews {
+        .user-reviews_title {
+          h2 {
+            color: var(--first-main-color);
+          }
+          p {
+            color: white;
+          }
+        }
+        .user-reviews_reviews {
+          color: white;
+        }
+      }
+    }
+    footer {
+      .footer_legal-content {
+        color: white;
+        .content_social-media {
+          .icon {
+            filter: invert(1);
+          }
+        }
+        .br {
+          background-color: white;
+        }
+        .content_links {
+          a {
+            color: white;
+          }
+        }
+      }
+    }
   }
 }

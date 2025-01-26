@@ -2,16 +2,38 @@ $(document).on("DOMContentLoaded", function () {
   const button_chenge_theme = $(
     ".header-content_chenge-theme-buttons > button"
   );
+  const presentBlock_img = $(".present-photo");
+
+  function applyTheme(isDark) {
+    if (isDark) {
+      $("body").addClass("dark-theme");
+      presentBlock_img.attr("src", "imgs/alps-nigth.jpg");
+      button_chenge_theme.removeClass("active");
+      $(".dark-theme").addClass("active");
+    } else {
+      $("body").removeClass("dark-theme");
+      presentBlock_img.attr("src", "imgs/photo-for-mainBlock.webp");
+      button_chenge_theme.removeClass("active");
+      $(".light-theme").addClass("active");
+    }
+  }
+
+  const status_active_theme =
+    localStorage.getItem("active-dark-theme") === "true";
+  applyTheme(status_active_theme);
 
   button_chenge_theme.on("click", function () {
+    const isDark = $(this).hasClass("dark-theme");
     button_chenge_theme.removeClass("active");
     $(this).addClass("active");
 
-    if ($(this).hasClass("dark-theme")) {
-      $("body").addClass("dark-theme");
+    if (isDark) {
+      localStorage.setItem("active-dark-theme", "true");
     } else {
-      $("body").removeClass("dark-theme");
+      localStorage.setItem("active-dark-theme", "false");
     }
+
+    applyTheme(isDark);
   });
 
   function increaseNumberOf(el, startNum, lastNum, duration) {
