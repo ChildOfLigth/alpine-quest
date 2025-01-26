@@ -1,0 +1,706 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap");
+:root {
+  --fsz-for-h2-title: calc(28px + 12 * (100vw / 1912));
+  --fsz-for-p-title: calc(18px + 2 * (100vw / 1912));
+  --standart-fsz-p: calc(17px + 1 * (100vw / 1912));
+  --first-main-color: #4caf50;
+  --second-main-color: #ff6900;
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+  font-family: "Roboto", serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body header {
+  width: 100%;
+  height: 7vh;
+  background-color: black;
+  position: sticky;
+}
+body header .header-content {
+  width: 90%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body header .header-content .header-content__web-name {
+  font-size: calc(18px + 0.1046025105vw);
+  color: white;
+  font-family: "Playwrite IN", serif;
+}
+body header .header-content .header-content_chenge-theme-buttons {
+  width: 7%;
+  height: 100%;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body header .header-content .header-content_chenge-theme-buttons button {
+  width: 50px;
+  height: 90%;
+  border: none;
+  background-color: white;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  margin-top: 12px;
+}
+body header .header-content .header-content_chenge-theme-buttons button img {
+  width: 28px;
+  height: auto;
+  display: block;
+}
+body header .header-content .header-content_chenge-theme-buttons button.active {
+  background-color: var(--first-main-color);
+  border: 2.3px solid white;
+}
+body header .header-content .header-content_chenge-theme-buttons button.active img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+body main {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+}
+body main .main_welcome-section {
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .main_welcome-section .present-photo {
+  width: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .main_welcome-section .welcome-section_text-part {
+  position: relative;
+  top: 20%;
+  width: 48%;
+  height: 90%;
+}
+body main .main_welcome-section .welcome-section_text-part h1 {
+  font-size: calc(30px + 0.7322175732vw);
+  font-weight: 600;
+  color: black;
+  width: 60%;
+  line-height: 50px;
+  margin-bottom: 32px;
+}
+body main .main_welcome-section .welcome-section_text-part h1 span {
+  color: var(--first-main-color);
+}
+body main .main_welcome-section .welcome-section_text-part p {
+  font-size: calc(18px + 0.1046025105vw);
+  width: 60%;
+  line-height: 31px;
+}
+body main .main_about-company {
+  width: 75%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+body main .main_about-company .main_about-company_title {
+  width: 50%;
+  height: 25%;
+  text-align: center;
+  margin: 0 auto;
+}
+body main .main_about-company .main_about-company_title h2 {
+  color: black;
+  font-weight: 600;
+  font-size: var(--fsz-for-h2-title);
+  margin-bottom: 22px;
+}
+body main .main_about-company .main_about-company_title p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: var(--fsz-for-p-title);
+  line-height: 30px;
+}
+body main .main_about-company .main_about-company_our-advantages {
+  width: 84%;
+  height: 100%;
+  max-height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .main_about-company .main_about-company_our-advantages .our-advantages_elem {
+  width: 27%;
+  height: 80%;
+  max-height: 350px;
+  min-height: 262px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+body main .main_about-company .main_about-company_our-advantages .our-advantages_elem img {
+  width: 25%;
+  height: auto;
+}
+body main .main_about-company .main_about-company_our-advantages .our-advantages_elem h3 {
+  font-size: calc(24px + 0.4184100418vw);
+  color: black;
+  font-weight: 600;
+}
+body main .main_about-company .main_about-company_our-advantages .our-advantages_elem p {
+  font-size: var(--standart-fsz-p);
+  line-height: 28px;
+}
+body main .main_types-of-tours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 45vh;
+  background-color: black;
+}
+body main .main_types-of-tours .types-of-tours_title {
+  width: 30%;
+  text-align: left;
+  color: white;
+  margin-left: 130px;
+}
+body main .main_types-of-tours .types-of-tours_title h2 {
+  font-size: var(--fsz-for-h2-title);
+  margin-bottom: 20px;
+}
+body main .main_types-of-tours .types-of-tours_title p {
+  font-size: var(--fsz-for-p-title);
+  line-height: 30px;
+}
+body main .main_types-of-tours .types-of-tours_swiper {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body main .main_types-of-tours .types-of-tours_swiper .swiper_swiper-slide {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+body main .main_types-of-tours .types-of-tours_swiper .swiper_swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .main_types-of-tours .types-of-tours_swiper .swiper_swiper-slide .slide_text-part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 10px;
+}
+body main .main_types-of-tours .types-of-tours_swiper .swiper_swiper-slide .slide_text-part h3 {
+  font-size: calc(23px + 0.3661087866vw);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+body main .main_types-of-tours .types-of-tours_swiper .swiper_swiper-slide .slide_text-part p {
+  font-size: var(--standart-fsz-p);
+  line-height: 28px;
+  width: 86%;
+}
+body main .main_tour-data {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body main .main_tour-data .tour-data_text-part {
+  width: 55%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 48px;
+  position: relative;
+  top: 28.5%;
+}
+body main .main_tour-data .tour-data_text-part .tour-data_title {
+  width: 90%;
+}
+body main .main_tour-data .tour-data_text-part .tour-data_title h2 {
+  font-size: var(--fsz-for-h2-title);
+  font-weight: 700;
+  margin-bottom: 39px;
+}
+body main .main_tour-data .tour-data_text-part .tour-data_title p {
+  font-size: var(--fsz-for-p-title);
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+body main .main_tour-data .tour-data_text-part .tour-data_data-tour {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .main_tour-data .tour-data_text-part .tour-data_data-tour .data-tour_data-block {
+  width: 45%;
+}
+body main .main_tour-data .tour-data_text-part .tour-data_data-tour .data-tour_data-block h3 {
+  font-size: calc(24px + 0.4184100418vw);
+  font-weight: 600;
+  margin-bottom: 25px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+body main .main_tour-data .tour-data_text-part .tour-data_data-tour .data-tour_data-block p {
+  font-size: 16px;
+}
+body main .main_tour-data img {
+  width: 45%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .main_traditions-of-the-alps {
+  width: 100%;
+  height: 78vh;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .main_traditions-of-the-alps .traditions-of-the-alps_content {
+  width: 67.5%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .main_traditions-of-the-alps .traditions-of-the-alps_content img {
+  height: 100%;
+  width: 45%;
+  border-radius: 5px;
+}
+body main .main_traditions-of-the-alps .traditions-of-the-alps_content .content_text-part {
+  width: 50%;
+  height: 100%;
+  color: white;
+}
+body main .main_traditions-of-the-alps .traditions-of-the-alps_content .content_text-part h2 {
+  font-weight: 600;
+  font-size: var(--fsz-for-h2-title);
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+body main .main_traditions-of-the-alps .traditions-of-the-alps_content .content_text-part p {
+  font-size: var(--fsz-for-p-title);
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+body main .main_traditions-of-the-alps .traditions-of-the-alps_content .content_proposed-options {
+  list-style: none;
+}
+body main .main_traditions-of-the-alps .traditions-of-the-alps_content .content_proposed-options li {
+  font-size: var(--standart-fsz-p);
+  line-height: 40px;
+}
+body main .main_traditions-of-the-alps .traditions-of-the-alps_content .content_proposed-options li::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-image: url("imgs/mountain.svg");
+  background-size: cover;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+body main .main_winter-tours {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .main_winter-tours img {
+  width: 45%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .main_winter-tours .winter-tours_text-part {
+  width: 33%;
+  height: 100%;
+  padding: 80px 30px;
+}
+body main .main_winter-tours .winter-tours_text-part .text-part_title {
+  margin-bottom: 35px;
+}
+body main .main_winter-tours .winter-tours_text-part .text-part_title h2 {
+  font-size: var(--fsz-for-h2-title);
+  font-weight: 600;
+  line-height: 45px;
+  margin-bottom: 30px;
+}
+body main .main_winter-tours .winter-tours_text-part .text-part_title p {
+  font-size: var(--fsz-for-p-title);
+  line-height: 28px;
+}
+body main .main_winter-tours .winter-tours_text-part .text-part_tour-opportunities {
+  list-style: none;
+}
+body main .main_winter-tours .winter-tours_text-part .text-part_tour-opportunities li {
+  font-size: var(--standart-fsz-p);
+  line-height: 35px;
+}
+body main .main_winter-tours .winter-tours_text-part .text-part_tour-opportunities li::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  width: 27px;
+  height: 27px;
+  margin-right: 10px;
+  background-image: url("imgs/ski.svg");
+  background-size: cover;
+}
+body main .main_user-reviews {
+  width: 80%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 62px auto 0 auto;
+}
+body main .main_user-reviews .user-reviews_title {
+  text-align: center;
+}
+body main .main_user-reviews .user-reviews_title h2 {
+  font-size: var(--fsz-for-h2-title);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+body main .main_user-reviews .user-reviews_title p {
+  font-size: var(--fsz-for-p-title);
+}
+body main .main_user-reviews .user-reviews_reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  list-style: none;
+  padding: 80px 0;
+}
+body main .main_user-reviews .user-reviews_reviews li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  height: 55%;
+  max-width: 413px;
+  min-width: 310px;
+  min-height: 310px;
+  max-width: 360px;
+  text-align: center;
+}
+body main .main_user-reviews .user-reviews_reviews li h3 {
+  font-size: calc(25px + 0.4707112971vw);
+  font-weight: 600;
+  margin-bottom: 19px;
+}
+body main .main_user-reviews .user-reviews_reviews li p {
+  font-size: 15px;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: 600;
+  line-height: 20px;
+}
+body main .main_user-reviews .user-reviews_reviews li img {
+  width: 103px;
+  height: 103px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 20px 0;
+  border-radius: 50%;
+}
+body main .main_user-reviews .user-reviews_reviews li p {
+  font-size: 15px;
+}
+body footer {
+  width: 100%;
+  height: auto;
+}
+body footer .footer_communication-methods {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding: 80px 0;
+  background-color: #000000;
+}
+body footer .footer_communication-methods .communication-methods_content {
+  width: 75%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+body footer .footer_communication-methods .communication-methods_content .communication-methods_method {
+  width: 25%;
+  max-width: 413px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  text-align: left;
+}
+body footer .footer_communication-methods .communication-methods_content .communication-methods_method:nth-child(3) img {
+  position: relative;
+  top: 0;
+  left: -4px;
+}
+body footer .footer_communication-methods .communication-methods_content .communication-methods_method img {
+  width: 30px;
+  height: 30px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin-bottom: 15px;
+}
+body footer .footer_communication-methods .communication-methods_content .communication-methods_method h3 {
+  font-size: calc(24px + 0.4184100418vw);
+  font-weight: 600;
+}
+body footer .footer_communication-methods .communication-methods_content .communication-methods_method p {
+  font-size: 15px;
+  line-height: 24px;
+}
+body footer .footer_communication-methods .communication-methods_content .communication-methods_method p span {
+  color: var(--first-main-color);
+}
+body footer .footer_legal-content {
+  width: 100%;
+  height: auto;
+  padding: 80px 0;
+}
+body footer .footer_legal-content .legal-content_content {
+  width: 60%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+body footer .footer_legal-content .legal-content_content .br {
+  background-color: #000000;
+  height: 1px;
+  width: 100%;
+  margin: 30px 0;
+}
+body footer .footer_legal-content .legal-content_content .content_social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 9%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+body footer .footer_legal-content .legal-content_content .content_social-media .icon {
+  width: 16px;
+  height: auto;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  margin-left: auto;
+}
+body footer .footer_legal-content .legal-content_content .content_social-media .icon:hover {
+  cursor: pointer;
+  fill: #4caf50;
+}
+body footer .footer_legal-content .legal-content_content .content_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 83%;
+}
+body footer .footer_legal-content .legal-content_content .content_links a {
+  color: #000000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body footer .footer_legal-content .legal-content_content .content_links a:hover {
+  color: var(--first-main-color);
+}
+body.dark-theme {
+  background-color: rgb(20, 39, 39);
+}
