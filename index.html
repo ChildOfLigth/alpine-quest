@@ -14,7 +14,9 @@
         <span class="header-content__web-name">AlpineQuest</span>
 
         <div class="header-content_chenge-theme-buttons">
-          <button class="light-theme active"><img src="imgs/sun.png" alt="" /></button>
+          <button class="light-theme active">
+            <img src="imgs/sun.png" alt="" />
+          </button>
           <button class="dark-theme"><img src="imgs/moon.png" alt="" /></button>
         </div>
       </div>
@@ -35,50 +37,72 @@
             виды спорта, наши опытные гиды подарят вам незабываемые впечатления.
             Откройте для себя красоту и культуру Альп вместе с нами.
           </p>
+
+          <form class="form-registration-tour">
+            <input
+              required
+              type="text"
+              placeholder="Введите свой email"
+              class="user-email"
+              name="email"
+            />
+            <button>Регистрация</button>
+          </form>
+
+          <p class="status-sending-form"></p>
+
+          <p class="text-part_registration-conditions">
+            Регистрируясь, вы соглашаетесь с нашими
+            <a href="">Условиями и положениями</a> и
+            <a href="">Политикой конфиденциальности</a>. Мы уважаем вашу
+            конфиденциальность и обязуемся защищать вашу личную информацию.
+          </p>
         </div>
       </div>
 
       <div class="main_about-company">
-        <div class="main_about-company_title">
-          <h2>О компании AlpineQuest</h2>
-          <p>
-            Мы стремимся подарить незабываемые впечатления в Альпах с помощью
-            туров с опытными гидами.
-          </p>
-        </div>
+        <div class="about-company_content">
+          <div class="main_about-company_title">
+            <h2>О компании AlpineQuest</h2>
+            <p>
+              Мы стремимся подарить незабываемые впечатления в Альпах с помощью
+              туров с опытными гидами.
+            </p>
+          </div>
 
-        <ul class="main_about-company_our-advantages">
-          <li class="our-advantages_elem">
-            <img src="imgs/mission.png" alt="" />
-            <h3>Наша миссия</h3>
-            <p>
-              Чтобы подарить незабываемые впечатления в Альпах с помощью туров с
-              экспертами, которые познакомят путешественников с потрясающей
-              природной красотой и богатой культурой региона.
-            </p>
-          </li>
-          <li class="our-advantages_elem">
-            <img src="imgs/core-value.png" alt="" />
-            <h3>Наши ценности</h3>
-            <p>
-              Безопасность прежде всего: Мы уделяем приоритетное внимание
-              безопасности наших гостей во всех наших экскурсиях. Устойчивое
-              развитие: Мы стремимся сохранить природную красоту Альп для
-              будущих поколений.
-            </p>
-          </li>
-          <li class="our-advantages_elem">
-            <img src="imgs/support.png" alt="" />
-            <h3>Наша команда</h3>
-            <p>
-              Анна Мюллер, ведущий гид: Имея более чем 10-летний опыт работы
-              гидом в альпах, Анна с энтузиазмом делится своей любовью к горам с
-              другими. Лукас Шмидт, координатор тура: Лукас следит за тем, чтобы
-              каждый тур проходил гладко, точно координируя логистику и
-              потребности клиентов.
-            </p>
-          </li>
-        </ul>
+          <ul class="main_about-company_our-advantages">
+            <li class="our-advantages_elem">
+              <img src="imgs/mission.png" alt="" />
+              <h3>Наша миссия</h3>
+              <p>
+                Чтобы подарить незабываемые впечатления в Альпах с помощью туров
+                с экспертами, которые познакомят путешественников с потрясающей
+                природной красотой и богатой культурой региона.
+              </p>
+            </li>
+            <li class="our-advantages_elem">
+              <img src="imgs/core-value.png" alt="" />
+              <h3>Наши ценности</h3>
+              <p>
+                Безопасность прежде всего: Мы уделяем приоритетное внимание
+                безопасности наших гостей во всех наших экскурсиях. Устойчивое
+                развитие: Мы стремимся сохранить природную красоту Альп для
+                будущих поколений.
+              </p>
+            </li>
+            <li class="our-advantages_elem">
+              <img src="imgs/support.png" alt="" />
+              <h3>Наша команда</h3>
+              <p>
+                Анна Мюллер, ведущий гид: Имея более чем 10-летний опыт работы
+                гидом в альпах, Анна с энтузиазмом делится своей любовью к горам
+                с другими. Лукас Шмидт, координатор тура: Лукас следит за тем,
+                чтобы каждый тур проходил гладко, точно координируя логистику и
+                потребности клиентов.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="main_types-of-tours">
@@ -245,7 +269,7 @@
           <div class="communication-methods_method">
             <img src="imgs/email 1.svg" alt="" />
             <div class="method_text-part">
-              <h3>Напишите нам нам</h3>
+              <h3>Напишите нам</h3>
               <p>
                 Если у вас есть вопросы или вы хотите получить помощь, свяжитесь
                 с нами по электронной почте <span>info@alpinequest.com</span> Мы
@@ -398,6 +422,7 @@
         </div>
       </div>
     </footer>
+    <script src="sendForm.js"></script>
     <script src="functional-website.js"></script>
   </body>
 </html>

@@ -7,7 +7,7 @@ $(document).on("DOMContentLoaded", function () {
   function applyTheme(isDark) {
     if (isDark) {
       $("body").addClass("dark-theme");
-      presentBlock_img.attr("src", "imgs/alps-nigth.jpg");
+      presentBlock_img.attr("src", "imgs/alps-nigth.webp");
       button_chenge_theme.removeClass("active");
       $(".dark-theme").addClass("active");
     } else {

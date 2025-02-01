@@ -79,97 +79,161 @@ body {
     flex: 1 0 0;
 
     .main_welcome-section {
-      width: 100%;
-      height: 95vh;
+      width: 95%;
+      height: auto;
       display: flex;
       justify-content: space-between;
+      position: relative;
+      min-height: 880px;
+      max-height: 900px;
+    
       .present-photo {
         width: 50%;
         height: 100%;
         object-fit: cover;
       }
+    
       .welcome-section_text-part {
         position: relative;
-        top: 20%;
+        top: 0;
+        left: 5%;
         width: 48%;
-        height: 90%;
+        height: auto;
+        max-height: 80%;
+    
         h1 {
-          font-size: calc(30px + 14 * (100vw / 1912));
+          font-size: calc(33px + 17 * (100vw / 1912));
           font-weight: 600;
           color: black;
           width: 60%;
           line-height: 50px;
           margin-bottom: 32px;
+          
           span {
             color: var(--first-main-color);
           }
         }
+    
         p {
-          font-size: calc(18px + 2 * (100vw / 1912));
+          font-size: calc(19px + 3 * (100vw / 1912));
           width: 60%;
-          line-height: 31px;
+          line-height: 35px;
+        }
+    
+        .form-registration-tour {
+          width: 50%;
+          height: auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+    
+          input {
+            width: 70%;
+            height: 48px;
+            min-height: 40px;
+            max-height: 52px;
+            background-color: white;
+            font-size: 15px;
+            padding: 12px 24px;
+            margin: 20px 0;
+            border-radius: 3px;
+            border: none;
+            box-shadow: 0px 1px 2px #92979c;
+          }
+    
+          button {
+            background-color: var(--first-main-color);
+            border: none;
+            border-radius: 3px;
+            height: 48px;
+            width: 28%;
+            color: white;
+            font-size: 16px;
+          }
+        }
+    
+        .text-part_registration-conditions {
+          font-size: 15px;
+          color: #000000;
+          line-height: 23px;
+          
+          a {
+            color: var(--first-main-color);
+          }
+        }
+    
+        .status-sending-form {
+          font-size: 16px;
+          font-weight: 400;
+          margin-bottom: 10px;
         }
       }
     }
+    
     .main_about-company {
-      width: 75%;
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0 auto;
-      padding: 120px 0;
-      .main_about-company_title {
-        width: 50%;
-        height: 25%;
-        text-align: center;
-        margin: 0 auto;
-
-        h2 {
-          color: black;
-          font-weight: 600;
-          font-size: var(--fsz-for-h2-title);
-          margin-bottom: 22px;
-        }
-        p {
-          width: 80%;
-          margin: 0 auto;
-          font-size: var(--fsz-for-p-title);
-          line-height: 30px;
-        }
-      }
-      .main_about-company_our-advantages {
-        width: 84%;
+      width: 100%;
+      height: auto;
+      max-height: 800px;
+      .about-company_content {
+        width: 75%;
         height: 100%;
-        max-height: 800px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        .our-advantages_elem {
-          width: 27%;
-          height: 80%;
-          max-height: 350px;
-          min-height: 262px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between;
+        margin: 0 auto;
+        padding: 120px 0;
+        .main_about-company_title {
+          width: 50%;
+          height: 25%;
           text-align: center;
+          margin: 0 auto;
 
-          img {
-            width: 25%;
-            height: auto;
-          }
-
-          h3 {
-            font-size: calc(24px + 8 * (100vw / 1912));
+          h2 {
             color: black;
             font-weight: 600;
+            font-size: var(--fsz-for-h2-title);
+            margin-bottom: 22px;
           }
-
           p {
-            font-size: var(--standart-fsz-p);
-            line-height: 28px;
+            width: 80%;
+            margin: 0 auto;
+            font-size: var(--fsz-for-p-title);
+            line-height: 30px;
+          }
+        }
+        .main_about-company_our-advantages {
+          width: 84%;
+          height: 100%;
+          max-height: 800px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .our-advantages_elem {
+            width: 27%;
+            height: 80%;
+            max-height: 350px;
+            min-height: 262px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+
+            img {
+              width: 25%;
+              height: auto;
+            }
+
+            h3 {
+              font-size: calc(24px + 8 * (100vw / 1912));
+              color: black;
+              font-weight: 600;
+            }
+
+            p {
+              font-size: var(--standart-fsz-p);
+              line-height: 28px;
+            }
           }
         }
       }
@@ -179,7 +243,8 @@ body {
       align-items: center;
       justify-content: space-between;
       width: 100%;
-      height: 45vh;
+      height: auto;
+      max-height: 600px;
       background-color: black;
       .types-of-tours_title {
         width: 30%;
@@ -233,7 +298,8 @@ body {
     }
     .main_tour-data {
       width: 100%;
-      height: 100vh;
+      height: auto;
+      max-height: 1100px;
       display: flex;
       flex-wrap: wrap;
       .tour-data_text-part {
@@ -284,7 +350,8 @@ body {
     }
     .main_traditions-of-the-alps {
       width: 100%;
-      height: 78vh;
+      height: auto;
+      max-height: 900px;
       background-color: #000000;
       display: flex;
       justify-content: center;
@@ -340,7 +407,8 @@ body {
     }
     .main_winter-tours {
       width: 100%;
-      height: 90vh;
+      height: auto;
+      max-height: 800px;
       display: flex;
       align-items: center;
       img {
@@ -352,6 +420,9 @@ body {
         width: 33%;
         height: 100%;
         padding: 80px 30px;
+        position: relative;
+        top: 0;
+        left: 30px;
         .text-part_title {
           margin-bottom: 35px;
           h2 {
@@ -361,15 +432,15 @@ body {
             margin-bottom: 30px;
           }
           p {
-            font-size: var(--fsz-for-p-title);
-            line-height: 28px;
+            font-size: calc(19px + 3 * (100vw / 1912));
+            line-height: 33px;
           }
         }
         .text-part_tour-opportunities {
           list-style: none;
           li {
-            font-size: var(--standart-fsz-p);
-            line-height: 35px;
+            font-size: calc(19px + 3 * (100vw / 1912));
+            line-height: 48px;
             &::before {
               content: "";
               display: inline-block;
@@ -387,7 +458,8 @@ body {
     }
     .main_user-reviews {
       width: 80%;
-      height: 70vh;
+      height: auto;
+      max-height: 700px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -469,7 +541,7 @@ body {
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
         .communication-methods_method {
           width: 25%;
           max-width: 413px;
@@ -566,24 +638,34 @@ body {
           h1 {
             color: white;
           }
+          .text-part_registration-conditions {
+            color: white;
+          }
+          .form-registration-tour {
+            .messege-ok {
+              color: white;
+            }
+          }
         }
       }
       .main_about-company {
+        background-color: #d6d2d2;
         color: white;
-        img {
-          filter: invert(1);
-        }
+
         .main_about-company_title {
           h2 {
             color: var(--first-main-color);
           }
           p {
-            color: white;
+            color: black;
           }
         }
         .main_about-company_our-advantages {
           h3 {
             color: var(--first-main-color);
+          }
+          p {
+            color: black;
           }
         }
       }
@@ -657,3 +739,4 @@ body {
     }
   }
 }
+
