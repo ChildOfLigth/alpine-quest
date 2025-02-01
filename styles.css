@@ -19,6 +19,9 @@ body header {
   min-height: 52px;
   background-color: black;
   position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 body header .header-content {
   width: 90%;
@@ -98,8 +101,8 @@ body main {
           flex: 1 0 0;
 }
 body main .main_welcome-section {
-  width: 95%;
-  height: auto;
+  width: 100%;
+  height: 96vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,29 +110,29 @@ body main .main_welcome-section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  min-height: 880px;
-  max-height: 900px;
+  min-height: 960px;
+  max-height: 1200px;
+  min-width: 1260px;
 }
 body main .main_welcome-section .present-photo {
-  width: 50%;
+  width: 46%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 body main .main_welcome-section .welcome-section_text-part {
   position: relative;
-  top: 0;
-  left: 5%;
-  width: 48%;
-  height: auto;
-  max-height: 80%;
+  top: 5%;
+  left: 2%;
+  width: 50%;
+  height: 100%;
 }
 body main .main_welcome-section .welcome-section_text-part h1 {
-  font-size: calc(33px + 0.8891213389vw);
+  font-size: calc(36px + 1.0460251046vw);
   font-weight: 600;
   color: black;
-  width: 60%;
-  line-height: 50px;
+  width: 67%;
+  line-height: 60px;
   margin-bottom: 32px;
 }
 body main .main_welcome-section .welcome-section_text-part h1 span {
@@ -138,7 +141,7 @@ body main .main_welcome-section .welcome-section_text-part h1 span {
 body main .main_welcome-section .welcome-section_text-part p {
   font-size: calc(19px + 0.1569037657vw);
   width: 60%;
-  line-height: 35px;
+  line-height: 30px;
 }
 body main .main_welcome-section .welcome-section_text-part .form-registration-tour {
   width: 50%;
@@ -159,7 +162,7 @@ body main .main_welcome-section .welcome-section_text-part .form-registration-to
   min-height: 40px;
   max-height: 52px;
   background-color: white;
-  font-size: 15px;
+  font-size: calc(17px + 0.0523012552vw);
   padding: 12px 24px;
   margin: 20px 0;
   border-radius: 3px;
@@ -177,7 +180,7 @@ body main .main_welcome-section .welcome-section_text-part .form-registration-to
   font-size: 16px;
 }
 body main .main_welcome-section .welcome-section_text-part .text-part_registration-conditions {
-  font-size: 15px;
+  font-size: calc(17px + 0.0523012552vw);
   color: #000000;
   line-height: 23px;
 }
@@ -185,14 +188,16 @@ body main .main_welcome-section .welcome-section_text-part .text-part_registrati
   color: var(--first-main-color);
 }
 body main .main_welcome-section .welcome-section_text-part .status-sending-form {
-  font-size: 16px;
+  font-size: calc(17px + 0.0523012552vw);
   font-weight: 400;
   margin-bottom: 10px;
 }
 body main .main_about-company {
   width: 100%;
-  height: auto;
+  height: 88vh;
+  min-height: 700px;
   max-height: 800px;
+  min-width: 1410px;
 }
 body main .main_about-company .about-company_content {
   width: 75%;
@@ -208,13 +213,13 @@ body main .main_about-company .about-company_content {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  padding: 120px 0;
+  padding: 100px 0;
 }
 body main .main_about-company .about-company_content .main_about-company_title {
   width: 50%;
   height: 25%;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 body main .main_about-company .about-company_content .main_about-company_title h2 {
   color: black;
@@ -842,4 +847,21 @@ body.dark-theme footer .footer_legal-content .br {
 }
 body.dark-theme footer .footer_legal-content .content_links a {
   color: white;
+}
+
+@media (max-width: 1423px) {
+  main .main_welcome-section .welcome-section_text-part .form-registration-tour {
+    width: 80%;
+  }
+  main .main_welcome-section .welcome-section_text-part .form-registration-tour button {
+    width: 33%;
+  }
+}
+@media (max-width: 1410px) {
+  main .main_about-company {
+    width: 90%;
+  }
+  main .main_about-company .about-company_content {
+    padding: 40px 0 !important;
+  }
 }
