@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --fsz-for-h2-title: calc(28px + 12 * (100vw / 1912));
   --fsz-for-p-title: calc(18px + 2 * (100vw / 1912));
@@ -8,7 +9,6 @@
 
 body {
   background-color: white;
-  overflow-x: hidden;
   font-family: "Roboto", serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -112,7 +112,6 @@ body main .main_welcome-section {
   position: relative;
   min-height: 960px;
   max-height: 1200px;
-  min-width: 1260px;
 }
 body main .main_welcome-section .present-photo {
   width: 46%;
@@ -139,7 +138,7 @@ body main .main_welcome-section .welcome-section_text-part h1 span {
   color: var(--first-main-color);
 }
 body main .main_welcome-section .welcome-section_text-part p {
-  font-size: calc(19px + 0.1569037657vw);
+  font-size: calc(18px + 0.1046025105vw);
   width: 60%;
   line-height: 30px;
 }
@@ -158,12 +157,10 @@ body main .main_welcome-section .welcome-section_text-part .form-registration-to
 }
 body main .main_welcome-section .welcome-section_text-part .form-registration-tour input {
   width: 70%;
-  height: 48px;
-  min-height: 40px;
-  max-height: 52px;
+  height: 46px;
   background-color: white;
   font-size: calc(17px + 0.0523012552vw);
-  padding: 12px 24px;
+  padding: 0 24px;
   margin: 20px 0;
   border-radius: 3px;
   border: none;
@@ -195,9 +192,6 @@ body main .main_welcome-section .welcome-section_text-part .status-sending-form 
 body main .main_about-company {
   width: 100%;
   height: 88vh;
-  min-height: 700px;
-  max-height: 800px;
-  min-width: 1410px;
 }
 body main .main_about-company .about-company_content {
   width: 75%;
@@ -213,13 +207,12 @@ body main .main_about-company .about-company_content {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 80px;
 }
 body main .main_about-company .about-company_content .main_about-company_title {
   width: 50%;
-  height: 25%;
+  height: auto;
   text-align: center;
-  margin: 0 auto 20px auto;
 }
 body main .main_about-company .about-company_content .main_about-company_title h2 {
   color: black;
@@ -236,7 +229,6 @@ body main .main_about-company .about-company_content .main_about-company_title p
 body main .main_about-company .about-company_content .main_about-company_our-advantages {
   width: 84%;
   height: 100%;
-  max-height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,9 +241,7 @@ body main .main_about-company .about-company_content .main_about-company_our-adv
 }
 body main .main_about-company .about-company_content .main_about-company_our-advantages .our-advantages_elem {
   width: 27%;
-  height: 80%;
-  max-height: 350px;
-  min-height: 262px;
+  height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,22 +274,18 @@ body main .main_types-of-tours {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
   height: auto;
-  max-height: 600px;
   background-color: black;
 }
 body main .main_types-of-tours .types-of-tours_title {
-  width: 30%;
+  width: 35%;
   text-align: left;
   color: white;
-  margin-left: 130px;
+  padding: 40px 20px 30px 130px;
 }
 body main .main_types-of-tours .types-of-tours_title h2 {
   font-size: var(--fsz-for-h2-title);
@@ -309,55 +295,74 @@ body main .main_types-of-tours .types-of-tours_title p {
   font-size: var(--fsz-for-p-title);
   line-height: 30px;
 }
-body main .main_types-of-tours .types-of-tours_swiper {
+body main .main_types-of-tours .types-of-tours_title p .open-dop-content {
+  display: none;
+  width: 60px;
+  height: auto;
+  min-width: 35px;
+  border: none;
+  position: relative;
+  top: 0;
+  left: 45%;
+}
+body main .main_types-of-tours .types-of-tours_variant-list {
   width: 60%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
 }
-body main .main_types-of-tours .types-of-tours_swiper .swiper_swiper-slide {
+body main .main_types-of-tours .types-of-tours_variant-list .variant-list_elem {
   position: relative;
   width: 50%;
   height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-body main .main_types-of-tours .types-of-tours_swiper .swiper_swiper-slide img {
+body main .main_types-of-tours .types-of-tours_variant-list .variant-list_elem img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-body main .main_types-of-tours .types-of-tours_swiper .swiper_swiper-slide .slide_text-part {
+body main .main_types-of-tours .types-of-tours_variant-list .variant-list_elem .elem_text-part {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 10px;
 }
-body main .main_types-of-tours .types-of-tours_swiper .swiper_swiper-slide .slide_text-part h3 {
+body main .main_types-of-tours .types-of-tours_variant-list .variant-list_elem .elem_text-part h3 {
   font-size: calc(23px + 0.3661087866vw);
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 }
-body main .main_types-of-tours .types-of-tours_swiper .swiper_swiper-slide .slide_text-part p {
+body main .main_types-of-tours .types-of-tours_variant-list .variant-list_elem .elem_text-part p {
   font-size: var(--standart-fsz-p);
   line-height: 28px;
   width: 86%;
 }
 body main .main_tour-data {
   width: 100%;
-  height: auto;
+  height: 90vh;
   max-height: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 body main .main_tour-data .tour-data_text-part {
   width: 55%;
-  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,6 +376,7 @@ body main .main_tour-data .tour-data_text-part {
   padding: 48px;
   position: relative;
   top: 28.5%;
+  left: 0;
 }
 body main .main_tour-data .tour-data_text-part .tour-data_title {
   width: 90%;
@@ -477,7 +483,7 @@ body main .main_traditions-of-the-alps .traditions-of-the-alps_content .content_
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  background-image: url("imgs/mountain.svg");
+  background-image: url("../imgs/mountain.svg");
   background-size: cover;
   -webkit-filter: invert(100%);
           filter: invert(100%);
@@ -535,7 +541,7 @@ body main .main_winter-tours .winter-tours_text-part .text-part_tour-opportuniti
   width: 27px;
   height: 27px;
   margin-right: 10px;
-  background-image: url("imgs/ski.svg");
+  background-image: url("../imgs/ski.svg");
   background-size: cover;
 }
 body main .main_user-reviews {
@@ -602,7 +608,6 @@ body main .main_user-reviews .user-reviews_reviews li {
   max-width: 413px;
   min-width: 310px;
   min-height: 310px;
-  max-width: 360px;
   text-align: center;
 }
 body main .main_user-reviews .user-reviews_reviews li h3 {
@@ -849,19 +854,220 @@ body.dark-theme footer .footer_legal-content .content_links a {
   color: white;
 }
 
-@media (max-width: 1423px) {
-  main .main_welcome-section .welcome-section_text-part .form-registration-tour {
-    width: 80%;
-  }
-  main .main_welcome-section .welcome-section_text-part .form-registration-tour button {
-    width: 33%;
+@media (max-width: 1678px) {
+  body main .main_welcome-section .welcome-section_text-part .form-registration-tour {
+    width: 70%;
   }
 }
-@media (max-width: 1410px) {
-  main .main_about-company {
+@media (max-width: 1583px) {
+  body main .main_about-company .about-company_content {
+    padding: 60px 0;
+  }
+  body main .main_about-company .about-company_content .main_about-company_our-advantages {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 1400px) {
+  body main .main_welcome-section .welcome-section_text-part {
+    width: 70%;
+  }
+  body main .main_welcome-section .welcome-section_text-part h1 {
+    line-height: 44px;
+  }
+  body main .main_about-company .about-company_content .main_about-company_title {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  body main .main_types-of-tours .types-of-tours_title {
+    width: 38%;
+    padding-left: 40px;
+  }
+}
+@media (max-width: 1315px) {
+  body main .main_types-of-tours {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .main_types-of-tours .types-of-tours_title {
+    width: 90%;
+    padding-left: 15px;
+  }
+  body main .main_types-of-tours .types-of-tours_variant-list {
+    width: 100%;
+    height: 470px;
+  }
+  body main .main_types-of-tours .types-of-tours_variant-list .variant-list_elem {
+    height: 100%;
+  }
+  body main .main_types-of-tours .types-of-tours_variant-list .variant-list_elem .elem_text-part {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 1303px) {
+  body main .main_welcome-section {
+    min-height: 500px;
+  }
+  body main .main_welcome-section img {
+    width: 34% !important;
+  }
+  body main .main_welcome-section .welcome-section_text-part {
+    width: 66%;
+  }
+  body main .main_welcome-section .welcome-section_text-part h1 {
+    width: 80%;
+  }
+  body main .main_welcome-section .welcome-section_text-part p {
     width: 90%;
   }
-  main .main_about-company .about-company_content {
-    padding: 40px 0 !important;
+  body main .main_welcome-section .welcome-section_text-part .form-registration-tour {
+    width: 65%;
+  }
+  body main .main_welcome-section .welcome-section_text-part .form-registration-tour button {
+    width: 29%;
+  }
+  body main .main_welcome-section .welcome-section_text-part .form-registration-tour input {
+    width: 70%;
+  }
+}
+@media (max-width: 1078px) {
+  body main .main_welcome-section .welcome-section_text-part {
+    position: relative;
+  }
+  body main .main_welcome-section .welcome-section_text-part .form-registration-tour {
+    width: 90%;
+  }
+  body main .main_about-company {
+    height: auto !important;
+  }
+  body main .main_about-company .about-company_content {
+    height: 100%;
+  }
+  body main .main_about-company .about-company_content .main_about-company_our-advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  body main .main_about-company .about-company_content .main_about-company_our-advantages .our-advantages_elem {
+    width: 100%;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .main_about-company .about-company_content .main_about-company_our-advantages .our-advantages_elem img {
+    width: 9%;
+    margin-bottom: 8px;
+    min-width: 56px;
+  }
+}
+@media (max-width: 720px) {
+  body main .main_welcome-section .welcome-section_text-part {
+    position: relative;
+    top: 2%;
+  }
+}
+@media (max-width: 660px) {
+  body main .main_types-of-tours .types-of-tours_title {
+    padding: 30px 20px 10px 40px;
+  }
+  body main .main_types-of-tours .types-of-tours_title p .open-dop-content {
+    display: block;
+  }
+  body main .main_types-of-tours .types-of-tours_variant-list {
+    display: none;
+    height: 900px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .main_types-of-tours .types-of-tours_variant-list.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .main_types-of-tours .types-of-tours_variant-list.show .variant-list_elem {
+    width: 100%;
+    height: 50%;
+  }
+}
+@media (max-width: 652px) {
+  body main .main_welcome-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  body main .main_welcome-section img {
+    width: 100% !important;
+    height: 30% !important;
+    max-height: 300px;
+  }
+  body main .main_welcome-section .welcome-section_text-part {
+    width: 100%;
+    height: 70%;
+    margin: 20px 0;
+  }
+  body main .main_welcome-section .welcome-section_text-part .form-registration-tour input {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 544px) {
+  body main .main_welcome-section .welcome-section_text-part h1 {
+    width: 100%;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 22px;
+  }
+  body main .main_about-company .about-company_content {
+    width: 100% !important;
+  }
+  body main .main_about-company .about-company_content .main_about-company_title p {
+    width: 80%;
+  }
+  body main .main_about-company .about-company_content .main_about-company_our-advantages {
+    gap: 30px;
+  }
+}
+@media (max-width: 420px) {
+  body main .main_welcome-section .welcome-section_text-part p {
+    width: 95%;
+    line-height: 26px;
+  }
+  body main .main_welcome-section .welcome-section_text-part .form-registration-tour {
+    width: 97%;
+  }
+  body main .main_welcome-section .welcome-section_text-part .form-registration-tour button {
+    font-size: 14px;
+    width: 25%;
+    min-width: 89px;
+  }
+  body main .main_welcome-section .welcome-section_text-part .form-registration-tour input {
+    width: 75%;
+  }
+  body main .main_types-of-tours .types-of-tours_title {
+    padding-left: 20px;
+    font-size: 17px !important;
   }
 }

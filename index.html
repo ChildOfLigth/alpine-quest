@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <link rel="stylesheet" href="resetStyles.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/resetStyles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <title>AlpineQuest</title>
   </head>
   <body>
@@ -111,13 +111,14 @@
             продемонстрировать потрясающую красоту Альп. Независимо от того,
             ищете ли вы приключений или отдыха, наши пакеты удовлетворят все
             предпочтения, гарантируя незабываемые впечатления.
+            <button class="open-dop-content"></button>
           </p>
         </div>
 
-        <div class="types-of-tours_swiper">
-          <div class="swiper_swiper-slide active">
+        <div class="types-of-tours_variant-list">
+          <div class="variant-list_elem">
             <img src="imgs/alps-tours.jpg" alt="" />
-            <div class="slide_text-part">
+            <div class="elem_text-part">
               <h3>Пешие туры</h3>
               <p>
                 Откройте для себя захватывающие дух маршруты в одном из самых
@@ -127,9 +128,9 @@
               </p>
             </div>
           </div>
-          <div class="swiper_swiper-slide">
+          <div class="variant-list_elem">
             <img src="imgs/alps-winter-tours.jpg" alt="" />
-            <div class="slide_text-part">
+            <div class="elem_text-part">
               <h3>Зимние туры</h3>
               <p>
                 Испытайте захватывающие зимние виды спорта с первоклассным
@@ -155,12 +156,12 @@
           </div>
           <div class="tour-data_data-tour">
             <div class="data-tour_data-block" id="distance">
-              <h3></h3>
+              <h3><p>150км</p></h3>
               <p>Общее расстояние, пройденное в наших турах.</p>
             </div>
 
             <div class="data-tour_data-block" id="number_of_tours">
-              <h3></h3>
+              <h3><p>50туров</p></h3>
               <p>Доступны различные пешие туры.</p>
             </div>
           </div>
@@ -420,7 +421,7 @@
         </div>
       </div>
     </footer>
-    <script src="sendForm.js"></script>
-    <script src="functional-website.js"></script>
+    <script src="js/sendForm.js"></script>
+    <script src="js/functional-website.js"></script>
   </body>
 </html>
