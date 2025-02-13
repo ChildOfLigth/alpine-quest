@@ -594,7 +594,7 @@ body {
                 opacity: 0;
               }
               h3 {
-                font-size: calc(24px + 8 * (100vw / 1912));
+                font-size: calc(23px + 7 * (100vw / 1912));
                 font-weight: 600;
               }
               .arrow-for-showContent {
@@ -647,9 +647,10 @@ body {
           justify-content: space-between;
           align-items: center;
           margin-left: auto;
+          min-width: 90px;
           .icon {
             width: 16px;
-            height: auto;
+            height: 16px;
             transition: all 0.4s;
             margin-left: auto;
             &:hover {
@@ -789,8 +790,10 @@ body {
           background-color: white;
         }
         .content_links {
-          a {
-            color: white;
+          .links_link {
+            a {
+              color: white;
+            }
           }
         }
       }
@@ -1200,11 +1203,12 @@ body {
         .communication-methods_content {
           display: flex;
           flex-direction: column;
-          width: 90%;
-          padding: 0;
+          width: 100%;
+          padding: 30px 10px;
           .communication-methods_method {
             width: 100%;
             .icon {
+              display: none;
               opacity: 0;
             }
             .method_text-part {

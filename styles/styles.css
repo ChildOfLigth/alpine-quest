@@ -721,7 +721,7 @@ body footer .footer_communication-methods .communication-methods_content .commun
   opacity: 0;
 }
 body footer .footer_communication-methods .communication-methods_content .communication-methods_method .method_text-part .text-part_title-section h3 {
-  font-size: calc(24px + 0.4184100418vw);
+  font-size: calc(23px + 0.3661087866vw);
   font-weight: 600;
 }
 body footer .footer_communication-methods .communication-methods_content .communication-methods_method .method_text-part .text-part_title-section .arrow-for-showContent {
@@ -783,10 +783,11 @@ body footer .footer_legal-content .legal-content_content .content_social-media {
       -ms-flex-align: center;
           align-items: center;
   margin-left: auto;
+  min-width: 90px;
 }
 body footer .footer_legal-content .legal-content_content .content_social-media .icon {
   width: 16px;
-  height: auto;
+  height: 16px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   margin-left: auto;
@@ -907,7 +908,7 @@ body.dark-theme footer .footer_legal-content .content_social-media .icon {
 body.dark-theme footer .footer_legal-content .br {
   background-color: white;
 }
-body.dark-theme footer .footer_legal-content .content_links a {
+body.dark-theme footer .footer_legal-content .content_links .links_link a {
   color: white;
 }
 
@@ -1237,13 +1238,14 @@ body.dark-theme footer .footer_legal-content .content_links a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 90%;
-    padding: 0;
+    width: 100%;
+    padding: 30px 10px;
   }
   body footer .footer_communication-methods .communication-methods_content .communication-methods_method {
     width: 100%;
   }
   body footer .footer_communication-methods .communication-methods_content .communication-methods_method .icon {
+    display: none;
     opacity: 0;
   }
   body footer .footer_communication-methods .communication-methods_content .communication-methods_method .method_text-part .text-part_title-section .hidden-icon {
