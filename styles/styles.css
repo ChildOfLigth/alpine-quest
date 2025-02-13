@@ -111,7 +111,7 @@ body main .main_welcome-section {
           justify-content: space-between;
   position: relative;
   min-height: 960px;
-  max-height: 1200px;
+  max-height: 1023px;
 }
 body main .main_welcome-section .present-photo {
   width: 46%;
@@ -192,6 +192,7 @@ body main .main_welcome-section .welcome-section_text-part .status-sending-form 
 body main .main_about-company {
   width: 100%;
   height: 88vh;
+  min-height: 663px;
 }
 body main .main_about-company .about-company_content {
   width: 75%;
@@ -356,7 +357,7 @@ body main .main_types-of-tours .types-of-tours_variant-list .variant-list_elem .
 body main .main_tour-data {
   width: 100%;
   height: 90vh;
-  max-height: 1100px;
+  min-height: 606px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,23 +376,23 @@ body main .main_tour-data .tour-data_text-part {
           align-items: center;
   padding: 48px;
   position: relative;
-  top: 28.5%;
+  top: 20%;
   left: 0;
 }
-body main .main_tour-data .tour-data_text-part .tour-data_title {
+body main .main_tour-data .tour-data_text-part .text-part_title {
   width: 90%;
 }
-body main .main_tour-data .tour-data_text-part .tour-data_title h2 {
+body main .main_tour-data .tour-data_text-part .text-part_title h2 {
   font-size: var(--fsz-for-h2-title);
   font-weight: 700;
   margin-bottom: 39px;
 }
-body main .main_tour-data .tour-data_text-part .tour-data_title p {
+body main .main_tour-data .tour-data_text-part .text-part_title p {
   font-size: var(--fsz-for-p-title);
   line-height: 28px;
   margin-bottom: 40px;
 }
-body main .main_tour-data .tour-data_text-part .tour-data_data-tour {
+body main .main_tour-data .tour-data_text-part .text-part_data-tour {
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -400,17 +401,17 @@ body main .main_tour-data .tour-data_text-part .tour-data_data-tour {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-body main .main_tour-data .tour-data_text-part .tour-data_data-tour .data-tour_data-block {
+body main .main_tour-data .tour-data_text-part .text-part_data-tour .data-tour_data-block {
   width: 45%;
 }
-body main .main_tour-data .tour-data_text-part .tour-data_data-tour .data-tour_data-block h3 {
+body main .main_tour-data .tour-data_text-part .text-part_data-tour .data-tour_data-block h3 {
   font-size: calc(24px + 0.4184100418vw);
   font-weight: 600;
   margin-bottom: 25px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
-body main .main_tour-data .tour-data_text-part .tour-data_data-tour .data-tour_data-block p {
+body main .main_tour-data .tour-data_text-part .text-part_data-tour .data-tour_data-block p {
   font-size: 16px;
 }
 body main .main_tour-data img {
@@ -422,7 +423,6 @@ body main .main_tour-data img {
 body main .main_traditions-of-the-alps {
   width: 100%;
   height: auto;
-  max-height: 900px;
   background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,10 +433,12 @@ body main .main_traditions-of-the-alps {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 80px 0;
+  min-height: 681px;
 }
 body main .main_traditions-of-the-alps .traditions-of-the-alps_content {
   width: 67.5%;
-  height: 80%;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,8 +450,10 @@ body main .main_traditions-of-the-alps .traditions-of-the-alps_content {
           justify-content: space-between;
 }
 body main .main_traditions-of-the-alps .traditions-of-the-alps_content img {
-  height: 100%;
   width: 45%;
+  min-height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 5px;
 }
 body main .main_traditions-of-the-alps .traditions-of-the-alps_content .content_text-part {
@@ -490,8 +494,9 @@ body main .main_traditions-of-the-alps .traditions-of-the-alps_content .content_
 }
 body main .main_winter-tours {
   width: 100%;
-  height: auto;
-  max-height: 800px;
+  height: 95vh;
+  min-height: 712px;
+  max-height: 1010px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,7 +610,6 @@ body main .main_user-reviews .user-reviews_reviews li {
           align-items: center;
   width: 20%;
   height: 55%;
-  max-width: 413px;
   min-width: 310px;
   min-height: 310px;
   text-align: center;
@@ -687,27 +691,58 @@ body footer .footer_communication-methods .communication-methods_content .commun
   color: white;
   text-align: left;
 }
-body footer .footer_communication-methods .communication-methods_content .communication-methods_method:nth-child(3) img {
+body footer .footer_communication-methods .communication-methods_content .communication-methods_method:nth-child(3) .icon {
   position: relative;
   top: 0;
   left: -4px;
 }
-body footer .footer_communication-methods .communication-methods_content .communication-methods_method img {
+body footer .footer_communication-methods .communication-methods_content .communication-methods_method .icon {
   width: 30px;
   height: 30px;
   -webkit-filter: invert(1);
           filter: invert(1);
   margin-bottom: 15px;
 }
-body footer .footer_communication-methods .communication-methods_content .communication-methods_method h3 {
+body footer .footer_communication-methods .communication-methods_content .communication-methods_method .method_text-part .text-part_title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body footer .footer_communication-methods .communication-methods_content .communication-methods_method .method_text-part .text-part_title-section .hidden-icon {
+  width: 30px;
+  height: 30px;
+  display: none;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin-right: 8px;
+  opacity: 0;
+}
+body footer .footer_communication-methods .communication-methods_content .communication-methods_method .method_text-part .text-part_title-section h3 {
   font-size: calc(24px + 0.4184100418vw);
   font-weight: 600;
 }
-body footer .footer_communication-methods .communication-methods_content .communication-methods_method p {
+body footer .footer_communication-methods .communication-methods_content .communication-methods_method .method_text-part .text-part_title-section .arrow-for-showContent {
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  border: none;
+  margin-left: 5px;
+}
+body footer .footer_communication-methods .communication-methods_content .communication-methods_method .method_text-part .text-part_title-section .arrow-for-showContent img {
+  width: 30px;
+  height: 30px;
+}
+body footer .footer_communication-methods .communication-methods_content .communication-methods_method .method_text-part p {
   font-size: 15px;
   line-height: 24px;
+  display: block;
+  opacity: 1;
+  margin-top: 10px;
 }
-body footer .footer_communication-methods .communication-methods_content .communication-methods_method p span {
+body footer .footer_communication-methods .communication-methods_content .communication-methods_method .method_text-part p span {
   color: var(--first-main-color);
 }
 body footer .footer_legal-content {
@@ -716,7 +751,7 @@ body footer .footer_legal-content {
   padding: 80px 0;
 }
 body footer .footer_legal-content .legal-content_content {
-  width: 60%;
+  width: 70%;
   height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -770,14 +805,36 @@ body footer .footer_legal-content .legal-content_content .content_links {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 83%;
+  width: 80%;
 }
-body footer .footer_legal-content .legal-content_content .content_links a {
+body footer .footer_legal-content .legal-content_content .content_links .links_text-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+body footer .footer_legal-content .legal-content_content .content_links .links_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 355px;
+}
+body footer .footer_legal-content .legal-content_content .content_links .links_link a {
   color: #000000;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-body footer .footer_legal-content .legal-content_content .content_links a:hover {
+body footer .footer_legal-content .legal-content_content .content_links .links_link a:hover {
   color: var(--first-main-color);
 }
 body.dark-theme {
@@ -854,6 +911,14 @@ body.dark-theme footer .footer_legal-content .content_links a {
   color: white;
 }
 
+@media (max-width: 1682px) {
+  body footer .footer_legal-content .legal-content_content .content_links {
+    width: 100%;
+  }
+  body footer .footer_legal-content .legal-content_content .content_links .links_link {
+    width: 33%;
+  }
+}
 @media (max-width: 1678px) {
   body main .main_welcome-section .welcome-section_text-part .form-registration-tour {
     width: 70%;
@@ -872,6 +937,16 @@ body.dark-theme footer .footer_legal-content .content_links a {
         -ms-flex-align: center;
             align-items: center;
   }
+  body main .main_tour-data .tour-data_text-part {
+    position: relative;
+    top: 16%;
+    left: 0;
+  }
+}
+@media (max-width: 1410px) {
+  body main .main_winter-tours .winter-tours_text-part {
+    width: 50%;
+  }
 }
 @media (max-width: 1400px) {
   body main .main_welcome-section .welcome-section_text-part {
@@ -887,6 +962,9 @@ body.dark-theme footer .footer_legal-content .content_links a {
   body main .main_types-of-tours .types-of-tours_title {
     width: 38%;
     padding-left: 40px;
+  }
+  body main .main_traditions-of-the-alps .traditions-of-the-alps_content {
+    width: 80%;
   }
 }
 @media (max-width: 1315px) {
@@ -913,6 +991,12 @@ body.dark-theme footer .footer_legal-content .content_links a {
   body main .main_types-of-tours .types-of-tours_variant-list .variant-list_elem .elem_text-part {
     padding-left: 15px;
   }
+  body main .main_user-reviews {
+    width: 90%;
+  }
+  body main .main_user-reviews .user-reviews_reviews {
+    width: 94%;
+  }
 }
 @media (max-width: 1303px) {
   body main .main_welcome-section {
@@ -938,6 +1022,97 @@ body.dark-theme footer .footer_legal-content .content_links a {
   }
   body main .main_welcome-section .welcome-section_text-part .form-registration-tour input {
     width: 70%;
+  }
+  body main .main_winter-tours .winter-tours_text-part {
+    padding: 30px;
+  }
+}
+@media (max-width: 1348px) {
+  body footer .footer_legal-content .legal-content_content .content_links {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body footer .footer_legal-content .legal-content_content .content_links .links_text-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  body footer .footer_legal-content .legal-content_content .content_links .links_text-part p {
+    line-height: 30px;
+  }
+}
+@media (max-width: 1139px) {
+  body main .main_winter-tours {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    margin-bottom: 90px;
+  }
+  body main .main_winter-tours .winter-tours_text-part {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 30px 5px;
+  }
+  body main .main_winter-tours .winter-tours_text-part .text-part_title h2 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  body main .main_winter-tours .winter-tours_text-part .text-part_title h2 p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  body main .main_winter-tours .winter-tours_text-part .text-part_tour-opportunities li {
+    line-height: 27px;
+    margin-bottom: 18px;
+  }
+  body main .main_winter-tours img {
+    width: 100%;
+    max-height: 400px;
+    min-height: 200px;
+  }
+}
+@media (max-width: 1102px) {
+  body main .main_user-reviews {
+    height: auto;
+    max-height: none;
+    width: 80%;
+  }
+  body main .main_user-reviews .user-reviews_reviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 0;
+  }
+  body main .main_user-reviews .user-reviews_reviews li {
+    width: 100%;
+    min-height: 250px;
+    margin-bottom: 90px;
   }
 }
 @media (max-width: 1078px) {
@@ -969,17 +1144,125 @@ body.dark-theme footer .footer_legal-content .content_links a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 37px;
   }
   body main .main_about-company .about-company_content .main_about-company_our-advantages .our-advantages_elem img {
     width: 9%;
     margin-bottom: 8px;
     min-width: 56px;
   }
+  body footer .footer_communication-methods {
+    height: 40%;
+  }
+  body footer .footer_communication-methods .communication-methods_content {
+    width: 90%;
+  }
+  body footer .footer_communication-methods .communication-methods_content .communication-methods_method {
+    width: 50%;
+    padding: 25px 0;
+  }
+}
+@media (max-width: 1055px) {
+  body main .main_tour-data .tour-data_text-part {
+    position: relative;
+    top: 1%;
+    left: 0;
+  }
+}
+@media (max-width: 861px) {
+  body main .main_traditions-of-the-alps .traditions-of-the-alps_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .main_traditions-of-the-alps .traditions-of-the-alps_content img {
+    width: 100%;
+    height: 40%;
+    margin-bottom: 13px;
+    min-height: 300px;
+  }
+  body main .main_traditions-of-the-alps .traditions-of-the-alps_content .content_text-part {
+    width: 100%;
+    height: 60%;
+  }
+}
+@media (max-width: 807px) {
+  body main .main_tour-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 900px;
+  }
+  body main .main_tour-data .tour-data_text-part {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+    height: auto;
+  }
+  body main .main_tour-data .tour-data_text-part .text-part_data-tour .data-tour_data-block {
+    width: 40%;
+  }
+  body main .main_tour-data img {
+    width: 100%;
+    height: 50%;
+  }
+  body footer .footer_legal-content .legal-content_content .content_links {
+    width: 100%;
+  }
+  body footer .footer_legal-content .legal-content_content .content_links .links_text-part {
+    width: 100%;
+  }
 }
 @media (max-width: 720px) {
   body main .main_welcome-section .welcome-section_text-part {
     position: relative;
     top: 2%;
+  }
+  body footer .footer_communication-methods {
+    padding: 0;
+  }
+  body footer .footer_communication-methods .communication-methods_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    padding: 0;
+  }
+  body footer .footer_communication-methods .communication-methods_content .communication-methods_method {
+    width: 100%;
+  }
+  body footer .footer_communication-methods .communication-methods_content .communication-methods_method .icon {
+    opacity: 0;
+  }
+  body footer .footer_communication-methods .communication-methods_content .communication-methods_method .method_text-part .text-part_title-section .hidden-icon {
+    opacity: 1;
+    display: block;
+  }
+  body footer .footer_communication-methods .communication-methods_content .communication-methods_method .method_text-part .text-part_title-section .arrow-for-showContent {
+    opacity: 1;
+    -webkit-filter: none !important;
+            filter: none !important;
+  }
+  body footer .footer_communication-methods .communication-methods_content .communication-methods_method .method_text-part p {
+    display: none;
+    opacity: 0;
+    text-align: center;
+  }
+  body footer .footer_communication-methods .communication-methods_content .communication-methods_method .method_text-part p.show {
+    display: block;
+    opacity: 1;
   }
 }
 @media (max-width: 660px) {
@@ -1032,6 +1315,24 @@ body.dark-theme footer .footer_legal-content .content_links a {
     font-size: 15px;
     padding: 0 10px;
   }
+  body main .main_tour-data .tour-data_text-part .text-part_title {
+    width: 98% !important;
+  }
+  body main .main_tour-data .tour-data_text-part .text-part_data-tour {
+    width: 95% !important;
+  }
+  body main .main_tour-data .tour-data_text-part .text-part_data-tour .data-tour_data-block {
+    width: 40%;
+  }
+  body main .main_tour-data .tour-data_text-part .text-part_data-tour .data-tour_data-block h3 {
+    margin-bottom: 10px;
+  }
+  body main .main_traditions-of-the-alps .traditions-of-the-alps_content {
+    width: 95%;
+  }
+  body main .main_traditions-of-the-alps .traditions-of-the-alps_content img {
+    height: 200px;
+  }
 }
 @media (max-width: 544px) {
   body main .main_welcome-section .welcome-section_text-part h1 {
@@ -1048,6 +1349,42 @@ body.dark-theme footer .footer_legal-content .content_links a {
   }
   body main .main_about-company .about-company_content .main_about-company_our-advantages {
     gap: 30px;
+  }
+  body main .main_user-reviews {
+    height: auto;
+    max-height: none;
+    width: 90%;
+  }
+  body main .main_user-reviews .user-reviews_reviews {
+    width: 100%;
+  }
+  body main .main_user-reviews .user-reviews_reviews li {
+    width: 100%;
+  }
+}
+@media (max-width: 435px) {
+  body main .main_tour-data {
+    min-height: 900px;
+  }
+  body main .main_tour-data .tour-data_text-part {
+    position: relative;
+    top: 5%;
+  }
+  body main .main_tour-data .tour-data_text-part .text-part_data-tour {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .main_tour-data .tour-data_text-part .text-part_data-tour .data-tour_data-block {
+    width: 94%;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 420px) {
@@ -1069,5 +1406,20 @@ body.dark-theme footer .footer_legal-content .content_links a {
   body main .main_types-of-tours .types-of-tours_title {
     padding-left: 20px;
     font-size: 17px !important;
+  }
+}
+@media (max-width: 407px) {
+  body footer .footer_legal-content .legal-content_content .content_links .links_link {
+    width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body footer .footer_legal-content .legal-content_content .content_links .links_link a {
+    line-height: 30px;
   }
 }

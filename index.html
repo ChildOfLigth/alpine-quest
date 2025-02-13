@@ -145,7 +145,7 @@
       </div>
       <div class="main_tour-data">
         <div class="tour-data_text-part">
-          <div class="tour-data_title">
+          <div class="text-part_title">
             <h2>Исследуйте величественные Альпийские тропы</h2>
             <p>
               Присоединяйтесь к нашим пешим турам с гидом и погрузитесь в
@@ -154,14 +154,14 @@
               обеспечивая незабываемые впечатления.
             </p>
           </div>
-          <div class="tour-data_data-tour">
-            <div class="data-tour_data-block" id="distance">
-              <h3><p>150км</p></h3>
+          <div class="text-part_data-tour">
+            <div class="data-tour_data-block">
+              <h3 class="distance"></h3>
               <p>Общее расстояние, пройденное в наших турах.</p>
             </div>
 
-            <div class="data-tour_data-block" id="number_of_tours">
-              <h3><p>50туров</p></h3>
+            <div class="data-tour_data-block">
+              <h3 class="number_of_tours"></h3>
               <p>Доступны различные пешие туры.</p>
             </div>
           </div>
@@ -266,9 +266,13 @@
       <div class="footer_communication-methods">
         <div class="communication-methods_content">
           <div class="communication-methods_method">
-            <img src="imgs/email 1.svg" alt="" />
+            <img src="imgs/email 1.svg" alt="" class="icon"/>
             <div class="method_text-part">
-              <h3>Напишите нам</h3>
+              <div class="text-part_title-section">
+                <img src="imgs/email 1.svg" alt="" class="hidden-icon"/>
+                <h3>Напишите нам</h3> 
+                <button class="arrow-for-showContent"></button>
+              </div>
               <p>
                 Если у вас есть вопросы или вы хотите получить помощь, свяжитесь
                 с нами по электронной почте <span>info@alpinequest.com</span> Мы
@@ -276,10 +280,15 @@
               </p>
             </div>
           </div>
+    
           <div class="communication-methods_method">
-            <img src="imgs/phone-call 1.svg" alt="" />
+            <img src="imgs/phone-call 1.svg" alt="" class="icon"/>
             <div class="method_text-part">
-              <h3>Позвоните нам</h3>
+              <div class="text-part_title-section">
+                <img src="imgs/phone-call 1.svg" alt="" class="hidden-icon"/>
+                <h3>Позвоните нам</h3> 
+                <button class="arrow-for-showContent"></button>
+              </div>
               <p>
                 Вы можете связаться с нами напрямую по телефону +41 44 123 45
                 67. Наша служба поддержки клиентов доступна с 9 утра до 6 вечера
@@ -287,10 +296,15 @@
               </p>
             </div>
           </div>
+    
           <div class="communication-methods_method">
-            <img src="imgs/location 1.svg" alt="" />
+            <img src="imgs/location 1.svg" alt="" class="icon"/>
             <div class="method_text-part">
-              <h3>Посетите нас</h3>
+              <div class="text-part_title-section">
+                <img src="imgs/location 1.svg" alt="" class="hidden-icon"/>
+                <h3>Посетите нас</h3> 
+                <button class="arrow-for-showContent"></button>
+              </div>
               <p>
                 Приглашаем Вас посетить наш офис, расположенный по адресу:
                 <span>Bahnhofstrasse 100, Zürich, Switzerland, 8001.</span> Наша
@@ -300,16 +314,17 @@
             </div>
           </div>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.833237531806!2d8.537168977004159!3d47.37617317116966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a062ef36881%3A0xba2862db8cf7a41!2zQmFobmhvZnN0cmFzc2UgMTAwLCA4MDAxIFrDvHJpY2gsINCo0LLQtdC50YbQsNGA0LjRjw!5e0!3m2!1sru!2sua!4v1737893259373!5m2!1sru!2sua"
-          width="100%"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+      </div> 
+    
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.833237531806!2d8.537168977004159!3d47.37617317116966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a062ef36881%3A0xba2862db8cf7a41!2zQmFobmhvZnN0cmFzc2UgMTAwLCA4MDAxIFrDvHJpY2gsINCo0LLQtdC50YbQsNGA0LjRjw!5e0!3m2!1sru!2sua!4v1737893259373!5m2!1sru!2sua"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
 
       <div class="footer_legal-content">
         <div class="legal-content_content">
@@ -411,16 +426,21 @@
           <div class="br"></div>
 
           <div class="content_links">
-            <p>
-              © 2025 AlpineQuest. Все права защищены. Откройте для себя Альпы
-              вместе с нами.
-            </p>
-            <a href="">Правила и условия</a>
+            <div class="links_text-part">
+              <p>
+                © 2025 AlpineQuest. Все права защищены. 
+              </p>
+              <p> Откройте для себя Альпы
+                вместе с нами.</p>
+            </div>
+            <div class="links_link">
+              <a href="">Правила и условия</a>
             <a href="">Политика конфиденциальности</a>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+
     <script src="js/sendForm.js"></script>
     <script src="js/functional-website.js"></script>
   </body>
